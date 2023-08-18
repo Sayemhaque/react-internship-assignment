@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+
+
 export interface FormData {
     name:string,
     email:string,
@@ -12,3 +15,14 @@ export interface FormFieldProps {
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   }
+
+export  interface PrivateRouteProps {
+    children: ReactNode;
+  }
+
+  export interface post {
+    userId:number,
+    id:number,
+    body:string,
+    title:string
+}

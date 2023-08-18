@@ -1,9 +1,6 @@
-import React, { ReactNode } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
+import { PrivateRouteProps } from '../types';
 
-interface PrivateRouteProps {
-    children: ReactNode;
-  }
 
 const PrivateRoute:React.FC<PrivateRouteProps> = ({children}) => {
     const location = useLocation()
