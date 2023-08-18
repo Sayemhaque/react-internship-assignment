@@ -2,7 +2,10 @@ import {Button,Container, Grid, Typography } from '@mui/material';
 import {useState} from "react"
 import { FormData } from '../types';
 import { FormField } from './FormField';
+import {useNavigate} from "react-router-dom";
+
 const Form = () => {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
@@ -23,6 +26,7 @@ const Form = () => {
         console.log(JSON.stringify(formData)) ;
         //set data to the local storate
         localStorage.setItem("userData" , JSON.stringify(formData))
+        navigate("/2ndPage")
       };
     
     return (
