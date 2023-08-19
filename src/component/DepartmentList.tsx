@@ -76,7 +76,7 @@ export default function DepartmentList() {
           />
           <div onClick={handleToggleExpand} style={{ cursor: 'pointer' }}>
             {expanded ? <ArrowDropDownIcon /> : <ArrowRightIcon />}
-            <span>{department.department}</span>
+            {/* <span>{department.department}</span> */}
           </div>
           {children(index)}
         </div>
