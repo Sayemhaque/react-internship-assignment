@@ -23,13 +23,15 @@ This project demonstrates my proficiency in React and Material-UI (MUI) by compl
 - Enabled selection synchronization between departments and their sub-departments.
 
 
-## Dependencies
+## Technologies
 
 - React
 - Material-UI
 - React Router Dom
+- Local storage
+- Netlify
 
 .
 ## Live Link
 
-🚀 **[View Live Demo](https://your-live-demo-link.com/)**
+🚀 **[View Live Demo](https://user-hubb.netlify.app/)**
