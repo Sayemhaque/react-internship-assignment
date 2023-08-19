@@ -1,3 +1,4 @@
+import DepartmentList from "../component/DepartmentList";
 import Table from "../component/Table";
 
 const SecondPage= () => {
@@ -5,6 +6,7 @@ const SecondPage= () => {
         <div>
         <p>hi</p>
         <Table/>
+        <DepartmentList/>
         </div>
     );
 };
