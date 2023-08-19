@@ -27,7 +27,7 @@ const Form = () => {
     console.log(JSON.stringify(formData));
     //set data to the local storate
     localStorage.setItem("userData", JSON.stringify(formData))
-    navigate("/2ndPage")
+    navigate("/dashboard")
   };
 
   const location = useLocation()
@@ -42,7 +42,16 @@ const Form = () => {
   }
 
   return (
-    <Container maxWidth="sm">
+    <Container  maxWidth="md"
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minHeight: '100vh', // Make the container at least viewport height
+      background: 'linear-gradient(45deg, #e6e6e6, #ffffff)',
+      boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
+    }}>
       <Typography variant="h4" align="center" gutterBottom>
         Registaion
       </Typography>
@@ -71,7 +80,7 @@ const Form = () => {
           />
         </Grid>
         <Grid item xs={12}>
-          <Button fullWidth variant="contained" color="primary" type="submit">
+          <Button sx={{marginTop:"40px"}} fullWidth variant="contained" color="primary" type="submit">
             Submit
           </Button>
         </Grid>

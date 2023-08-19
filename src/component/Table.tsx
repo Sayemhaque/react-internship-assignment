@@ -25,13 +25,15 @@ const Table = () => {
         getAllData()
     }, [])
 
-    if(loading) return <Typography variant="h4" style={{ textAlign: 'center' }}>Loading...</Typography>
+
     //all the fields of the posts array
     const columns: GridColDef[] = generateColumns()
   
     return (
-        <div>
-            {posts.length}
+        <>
+        {loading ? (
+            <Typography variant="h4" style={{ textAlign: 'center' }}>Loading...</Typography>
+        ) : (
             <Box sx={{ height: 400, width: '100%' }}>
                 <DataGrid
                     rows={posts}
@@ -48,7 +50,8 @@ const Table = () => {
                     disableRowSelectionOnClick
                 />
             </Box>
-        </div>
+        )}
+        </>
     );
 };
 

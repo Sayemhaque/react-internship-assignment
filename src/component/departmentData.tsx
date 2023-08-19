@@ -1,10 +1,10 @@
 export const departmentData = [
     {
-      department: 'customer_service',
-      sub_departments: ['support', 'customer_success'],
+      department: 'Customer service',
+      sub_departments: ['Support', 'Customer success'],
     },
     {
-      department: 'design',
-      sub_departments: ['graphic_design', 'product_design'],
+      department: 'Design',
+      sub_departments: ['Graphic  design', 'product design'],
     },
   ];
